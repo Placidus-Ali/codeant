@@ -1,0 +1,60 @@
+Steps to build Cactus Game
+
+1. Open your Scratch
+2. Choose Backdrop - Desert
+3. Customize your Backdrops to have level 1 and 2, 
+   Game over and Congratulation pages:
+   a. click on backdrop at the top left side of the screen
+   b. click convert to vector
+   c. create level 1 and duplicate it to have level 1 & 2
+   d. click on the empty backdrop to create 
+      your Game Over and Congratulation
+   e. Now you have Level 1 & 2, Game Over and Congratulation
+4. Sprite
+   a. choose your sprite - Dinosaur5 and place it a right 
+      hand of the screen. reduce the size
+   b. Upload your cactus from PC
+   c. place it a the left side of the screen and reduce the
+   size
+5. Coding the Sprites
+   a. Making the Dinosaur start at a point when the green flag is click
+   b. Go to Event Block and bring "When the green flag is click"
+   c. Go to Motion Block and bring "go to x: y:" (x: 200, y: -121)
+   d. Go to Looks Block and bring "swutch backdrop" also bring "show" and place it under.
+   e. Now you can move the Dinosaur any where and click green flag to see.
+   f. Make the Dinosaur jump
+   g. Go to Event Block and bring "when space key pressed"
+   h. Go to Motion Block and bring 2 "glide 1 secs to x: y:" (glide 0.3, x: 200, y: 60), (glide 0.4, x: 200, y: -121) and 
+      put the first positive number and second y negative to make it go up and down
+   i. Make the Cactus move towards Dinosaur
+   k. drag the cactus to touch the Dinosaur so as to take the position
+   l. Go to Event Block and bring "when green flag clicked"
+   l. Go to Control Block and bring "forever"
+   m. Go to Motion Block and bring "go to x: y:" (x: -222, y: -121) 
+   n. Go to Motion Block and bring "glide 1 secs to x: y:" (glide 2, x: 222, y: -121)
+   o. Check if both the Dinosaur and cactus are working
+   p. Now make it show Game Over when Cactus Hits Dinosaur
+   q. Go to Control Block and bring "if then". place it inside the forever
+   r. Go to Sensing Block and bring "touching mouse-pointer" and chnage it Dinosaur
+   s. Go to Looks Block and bring "switch backgrop to level 1" and change it Game Over
+   t. Go to Looks Block and bring "hide" and place it inside the "if then" to hide the cactus
+   u. Go to Control Block and bring "stop all" and place it inside the "if then" to stop all the game
+   v. Go to Looks Block and bring "show" and place it under "when the green flag clicked"
+
+level 2
+a. Duplicate the cactus code
+b. remove the "when green flag is clicked" and "show"
+c. change the time in "glide" from 2 to 1.5
+d. for the Dinosuar to move to level 2, it must survive at least 9secs in level 1, and survive level 2 for 4.5 secs to get a congratulation
+e. so go back to Event Block and bring back "when the green flag is clicked" and place it separate
+f. Go to control Block and bring "wait 1 secs" and change it 9 secs
+g. Go to Looks Block and bring "switch backdrop to level 2"
+h. Go to control Block and bring "wait 1 secs" and change it to 4.5 secs
+i. Go to Looks Block and bring "switch backdrop to Congratulation"
+i. Go to Looks Block and bring "hide" and place it under the "switch backdrop to congratulations"
+j. Go to Control Block and bring "stop all" and place it under "hide"
+
+Make Dinosaur Hide when it shows congratulation
+a. Click Dinosaur Sprite
+b. Go to Control Block and bring "wait 1 secs" and change the 1 to 13.5 sec which is 9sec wait to switch to level 2 and 4.5 sec wait to switch to Congratulation
+c. Go to Looks Block and bring "hide" to hide the Dinosaur when congratulation page shows
